@@ -1,0 +1,17 @@
+<archivo>
+        <matriz>
+            <x>2</x>
+            <y>3</y>
+        </matriz>
+        <operaciones>
+            <operacion>
+                2 8 + 4 * 7 -
+            </operacion>
+            <operacion>
+                2 6 +
+            </operacion>
+            <operacion>
+                2 6 -
+            </operacion>              
+        </operaciones>
+</archivo>

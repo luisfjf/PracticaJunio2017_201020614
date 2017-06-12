@@ -30,17 +30,39 @@ class ListaUsuarios:
     def recorrer(self):
         aux = self.primero
         while aux:
-            print(aux.nombre)
+            print(aux.nombre), " ->"
             aux = aux.siguiente
             if aux == self.primero:
+                print(aux.nombre)
                 break
+        print ' '
                 
+    #Metodo para recorrer hacia atras
+    def recorrer_atras(self):
+        aux = self.primero
+        while aux:
+            print(aux.nombre), " ->"
+            aux = aux.anterior
+            if aux == self.primero:
+                print(aux.nombre)
+                break                
+        print ' '        
     #Metodo para buscar  
     def buscar(self,nombre):
         aux = self.primero
         while aux:
             if aux.nombre == nombre:
                 return True
+            aux = aux.siguiente
+            if aux == self.primero:
+                break   
+                
+    #Metodo para devolver un usuario
+    def obtener_usuario(self,nombre):
+        aux = self.primero
+        while aux:
+            if aux.nombre == nombre:
+                return aux
             aux = aux.siguiente
             if aux == self.primero:
                 break                
@@ -56,4 +78,5 @@ class ListaUsuarios:
                     return False
             aux = aux.siguiente
             if aux == self.primero:
+                return False
                 break      
